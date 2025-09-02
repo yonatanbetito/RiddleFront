@@ -1,7 +1,8 @@
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useNavigate } from "react-router";
 import Buttonchois from "../comps/Buttonchois";
 
 export default function Loginregister() {
+    const navigate = useNavigate();
   return (
     <>
       <h1>log and register</h1>
@@ -11,6 +12,7 @@ export default function Loginregister() {
       <Link to="register">
         <Buttonchois text={"register"} funhendel={() => {}} />
       </Link>
+      <Buttonchois text="Home" funhendel={()=>{navigate("/")}}/>
       <Outlet />
     </>
   );
