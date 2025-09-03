@@ -5,6 +5,7 @@ export default function Loginregister() {
     const navigate = useNavigate();
   return (
     <>
+    <Buttonchois text="Home" funhendel={()=>{navigate("/")}}/>
       <h1>log and register</h1>
       <Link to="login">
         <Buttonchois text={"login"} funhendel={() => {}} />
@@ -12,7 +13,6 @@ export default function Loginregister() {
       <Link to="register">
         <Buttonchois text={"register"} funhendel={() => {}} />
       </Link>
-      <Buttonchois text="Home" funhendel={()=>{navigate("/")}}/>
       <Outlet />
     </>
   );

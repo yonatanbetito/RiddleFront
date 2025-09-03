@@ -4,7 +4,7 @@ import Footerhome from "../comps/Footerhome";
 export default function Home() {
   return (
     <div>  
-      <Header />
+      <Header title="Home"/>
       <Mainhome/>
       <Footerhome/>
     </div>

@@ -7,8 +7,8 @@ export default function Mainhome(){
     <h1>Riddle Game</h1>
     <h2>Ready to test your wits?</h2>
     <Link to={"/login"}></Link>
-    <Buttonchois text={"play"} funhendel={()=>{console.log("play");}}/>
-    <Buttonchois text={"login"} funhendel={()=>{navigate("/loginregister")}}/>
-    <Buttonchois text={"register"} funhendel={()=>{navigate("/loginregister")}}/>
+    <Buttonchois text={"play"} funhendel={()=>{navigate("/play")}}/>
+    <Buttonchois text={"login/register"} funhendel={()=>{navigate("/loginregister")}}/>
+    <Buttonchois text={"leadboard"} funhendel={()=>{navigate("/leadboard")}}/>
     </>)
 }

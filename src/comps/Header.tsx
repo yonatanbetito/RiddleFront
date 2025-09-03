@@ -1,9 +1,12 @@
 import { Link } from "react-router";
-
-export default function Header(){
-    return(<>
-    <Link to="/">Home</Link>
-    <Link to="/login">Login</Link>
-
-        </>)
+type headerprops ={
+    title:string
+}
+export default function Header(prop:headerprops){
+    return (
+        <>
+            <Link to="/">Home</Link>
+            <h1>{prop.title}</h1>
+        </>
+    );
 }
